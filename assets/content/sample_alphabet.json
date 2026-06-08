@@ -1,0 +1,95 @@
+{
+  "module": {
+    "id": "mod_alphabet",
+    "title_fr": "L'alphabet arabe",
+    "title_ar": "الحُروف العَرَبِيّة",
+    "level": 0,
+    "lessons": ["les_alphabet_01"]
+  },
+  "letters": [
+    {
+      "char": "ا",
+      "name_ar": "أَلِف",
+      "translit": "alif",
+      "sound_ipa": "aː",
+      "note_fr": "Voyelle longue « â ». Ne s'attache jamais à la lettre suivante.",
+      "forms": { "isolated": "ا", "initial": "ا", "medial": "ـا", "final": "ـا" },
+      "audio": "audio/letters/alif.mp3"
+    },
+    {
+      "char": "ب",
+      "name_ar": "باء",
+      "translit": "bâ’",
+      "sound_ipa": "b",
+      "note_fr": "Son « b ». Un point en dessous.",
+      "forms": { "isolated": "ب", "initial": "بـ", "medial": "ـبـ", "final": "ـب" },
+      "audio": "audio/letters/ba.mp3"
+    },
+    {
+      "char": "ت",
+      "name_ar": "تاء",
+      "translit": "tâ’",
+      "sound_ipa": "t",
+      "note_fr": "Son « t ». Deux points au-dessus.",
+      "forms": { "isolated": "ت", "initial": "تـ", "medial": "ـتـ", "final": "ـت" },
+      "audio": "audio/letters/ta.mp3"
+    },
+    {
+      "char": "ث",
+      "name_ar": "ثاء",
+      "translit": "thâ’",
+      "sound_ipa": "θ",
+      "note_fr": "Son « th » anglais comme dans « think ». Trois points au-dessus.",
+      "forms": { "isolated": "ث", "initial": "ثـ", "medial": "ـثـ", "final": "ـث" },
+      "audio": "audio/letters/tha.mp3"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "les_alphabet_01",
+      "title_fr": "Les premières lettres : ا ب ت ث",
+      "xp": 10,
+      "exercises": [
+        {
+          "type": "intro_letter",
+          "letter": "ب",
+          "prompt_fr": "Voici la lettre « bâ’ ». Elle fait le son « b »."
+        },
+        {
+          "type": "listen_choose",
+          "prompt_fr": "Écoute et choisis la bonne lettre.",
+          "audio": "audio/letters/ta.mp3",
+          "options": ["ب", "ت", "ث", "ا"],
+          "answer": "ت"
+        },
+        {
+          "type": "mcq",
+          "prompt_fr": "Quelle lettre fait le son « th » (comme dans l'anglais « think ») ?",
+          "options": ["ب", "ت", "ث", "ا"],
+          "answer": "ث"
+        },
+        {
+          "type": "match",
+          "prompt_fr": "Associe chaque lettre à sa translittération.",
+          "pairs": [
+            { "left": "ا", "right": "alif" },
+            { "left": "ب", "right": "bâ’" },
+            { "left": "ت", "right": "tâ’" },
+            { "left": "ث", "right": "thâ’" }
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt_fr": "Comment reconnaître le « ت » du « ث » ?",
+          "options": [
+            "ت a deux points, ث en a trois",
+            "ت a trois points, ث en a deux",
+            "ت a un point, ث en a deux",
+            "Ils sont identiques"
+          ],
+          "answer": "ت a deux points, ث en a trois"
+        }
+      ]
+    }
+  ]
+}

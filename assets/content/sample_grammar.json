@@ -1,0 +1,57 @@
+{
+  "module": {
+    "id": "mod_grammar_nominal",
+    "title_fr": "La phrase nominale",
+    "title_ar": "الجُملة الاسمِيّة",
+    "level": 2,
+    "lessons": ["les_grammar_nominal_01"]
+  },
+  "lessons": [
+    {
+      "id": "les_grammar_nominal_01",
+      "title_fr": "La phrase nominale : sujet + attribut (sans verbe « être »)",
+      "xp": 15,
+      "concept_fr": "En arabe, on peut faire une phrase complète SANS verbe « être » au présent. On juxtapose simplement le sujet (مُبتَدأ) et son attribut (خَبَر). « البَيتُ كَبيرٌ » = littéralement « La-maison grande » = « La maison est grande ».",
+      "exercises": [
+        {
+          "type": "intro_rule",
+          "prompt_fr": "Observe : البَيتُ كَبيرٌ (al-baytu kabîrun) = « La maison est grande ». Il n'y a aucun mot pour « est » !"
+        },
+        {
+          "type": "mcq",
+          "prompt_fr": "Comment dit-on « est » dans « La maison est grande » en arabe ?",
+          "options": [
+            "On ne le dit pas : la phrase nominale n'a pas de verbe « être » au présent",
+            "Avec le mot يكون",
+            "Avec le mot هو",
+            "Avec le mot كان"
+          ],
+          "answer": "On ne le dit pas : la phrase nominale n'a pas de verbe « être » au présent"
+        },
+        {
+          "type": "mcq",
+          "prompt_fr": "Dans « الوَلَدُ صَغيرٌ » (le garçon est petit), quel est le sujet (مُبتَدأ) ?",
+          "options": ["الوَلَدُ", "صَغيرٌ", "les deux", "aucun"],
+          "answer": "الوَلَدُ"
+        },
+        {
+          "type": "build",
+          "prompt_fr": "Reconstruis : « L'étudiant est intelligent ».",
+          "tokens": ["الطّالِبُ", "ذَكِيٌّ", "يَكُونُ", "هُوَ"],
+          "answer": ["الطّالِبُ", "ذَكِيٌّ"]
+        },
+        {
+          "type": "translate_choose",
+          "prompt_fr": "Que signifie « الكِتابُ جَديدٌ » ?",
+          "options": [
+            "Le livre est nouveau",
+            "Le nouveau livre",
+            "Un livre nouveau",
+            "Où est le livre ?"
+          ],
+          "answer": "Le livre est nouveau"
+        }
+      ]
+    }
+  ]
+}
