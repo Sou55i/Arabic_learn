@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../app/providers.dart';
 import '../../../app/theme.dart';
 import '../../../data/models/content_models.dart';
 import 'answer_contract.dart';
@@ -128,15 +130,15 @@ class _OptionTile extends StatelessWidget {
   }
 }
 
-/// Bouton de lecture audio. En Phase 0 il n'y a pas encore de fichiers son,
-/// donc il informe simplement l'utilisateur (l'audio arrive en Phase 1).
-class _AudioButton extends StatelessWidget {
+/// Bouton de lecture audio. Joue le fichier associé à l'exercice ; si le son
+/// n'est pas encore généré (voir `tools/generate_audio.py`), affiche un repli.
+class _AudioButton extends ConsumerWidget {
   const _AudioButton({this.audio});
 
   final String? audio;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 16),
       child: Align(
@@ -146,10 +148,18 @@ class _AudioButton extends StatelessWidget {
             minimumSize: const Size(0, 56),
             padding: const EdgeInsets.symmetric(horizontal: 22),
           ),
-          onPressed: () {
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(content: Text('🔊 Audio à venir (Phase 1).')),
-            );
+          onPressed: () async {
+            final path = audio;
+            final played = path != null &&
+                await ref.read(audioPlayerProvider).play(path);
+            if (!played && context.mounted) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('🔊 Audio non disponible '
+                      '(lance tools/generate_audio.py).'),
+                ),
+              );
+            }
           },
           icon: const Icon(Icons.volume_up_rounded, size: 28),
           label: const Text('Écouter'),

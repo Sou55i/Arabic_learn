@@ -39,12 +39,27 @@ flutter run
 flutter test
 ```
 
+### Générer l'audio des lettres
+
+Les fichiers son ne sont pas versionnés : on les génère avec une voix arabe
+native via [`edge-tts`](https://github.com/rany2/edge-tts) (gratuit).
+
+```bash
+pip install -r tools/requirements.txt
+python tools/generate_audio.py            # crée assets/audio/letters/*.mp3
+python tools/generate_audio.py --list-voices   # autres voix arabes
+```
+
+Sans audio, l'app fonctionne quand même : le bouton « Écouter » affiche
+simplement un message de repli.
+
 ## État d'avancement
 
 - [x] **Phase 0** — Fondations : structure, thème, support RTL, modèles de
       données, chargement du contenu JSON, écran de parcours, moteur
       d'exercices (QCM, écoute, association, reconstruction), XP/streak/cœurs.
-- [ ] **Phase 1** — Contenu complet de l'alphabet + audio.
+- [x] **Phase 1** — Alphabet complet (28 lettres + hamza) en 8 leçons +
+      pipeline audio (lecteur intégré + script de génération).
 - [ ] **Phase 2** — Comptes, persistance locale, synchronisation, notifications.
 - [ ] **Phase 3** — Monétisation (abonnement + pubs).
 - [ ] **Phase 4** — Modules de grammaire/vocabulaire, polish, publication.

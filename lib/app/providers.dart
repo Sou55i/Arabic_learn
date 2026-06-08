@@ -1,11 +1,19 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../core/audio_player_service.dart';
 import '../data/models/user_progress.dart';
 import '../data/repositories/content_repository.dart';
 
 /// Dépôt de contenu (chargement des JSON).
 final contentRepositoryProvider =
     Provider<ContentRepository>((ref) => const ContentRepository());
+
+/// Service audio partagé (libéré automatiquement à la fin de vie du provider).
+final audioPlayerProvider = Provider<AudioPlayerService>((ref) {
+  final service = AudioPlayerService();
+  ref.onDispose(service.dispose);
+  return service;
+});
 
 /// Chargement asynchrone du cours et de ses modules.
 final courseProvider = FutureProvider<LoadedCourse>((ref) {
