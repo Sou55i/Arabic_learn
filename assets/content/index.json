@@ -1,0 +1,12 @@
+{
+  "course": {
+    "id": "course_fusha",
+    "title_fr": "Arabe littéraire",
+    "title_ar": "العَرَبِيّة الفُصحى",
+    "language_code": "ar"
+  },
+  "content_files": [
+    "assets/content/sample_alphabet.json",
+    "assets/content/sample_grammar.json"
+  ]
+}
