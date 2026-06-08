@@ -16,6 +16,7 @@ lecture de l'alphabet, vocabulaire et grammaire, par petites leçons ludiques.
 
 - [`docs/ROADMAP.md`](docs/ROADMAP.md) — plan de projet, architecture, monétisation.
 - [`docs/CURRICULUM.md`](docs/CURRICULUM.md) — programme pédagogique (alphabet → grammaire).
+- [`docs/COMMANDES_FLUTTER.md`](docs/COMMANDES_FLUTTER.md) — mémo de toutes les commandes Flutter.
 
 ## Démarrer (Phase 0)
 
