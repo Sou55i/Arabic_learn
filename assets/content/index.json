@@ -7,6 +7,8 @@
   },
   "content_files": [
     "assets/content/alphabet.json",
-    "assets/content/sample_grammar.json"
+    "assets/content/makharij.json",
+    "assets/content/vocabulary.json",
+    "assets/content/grammar.json"
   ]
 }

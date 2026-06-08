@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../app/theme.dart';
 import '../../data/models/content_models.dart';
+import 'widgets/articulation_exercise.dart';
 import 'widgets/build_exercise.dart';
 import 'widgets/choice_exercise.dart';
 import 'widgets/intro_exercise.dart';
@@ -30,7 +31,7 @@ class _LessonScreenState extends State<LessonScreen> {
 
   Exercise get _current => widget.lesson.exercises[_index];
   bool get _isLast => _index >= widget.lesson.exercises.length - 1;
-  bool get _isIntro => _current.type == ExerciseType.intro;
+  bool get _isIntro => _current.type.isInformational;
 
   void _onAnswer(({bool ready, bool correct}) result) {
     if (_checked) return;
@@ -127,6 +128,8 @@ class _LessonScreenState extends State<LessonScreen> {
     final key = ValueKey(_index);
     return switch (_current.type) {
       ExerciseType.intro => IntroExercise(key: key, exercise: _current),
+      ExerciseType.articulation =>
+        ArticulationExercise(key: key, exercise: _current),
       ExerciseType.mcq ||
       ExerciseType.listenChoose ||
       ExerciseType.translateChoose =>

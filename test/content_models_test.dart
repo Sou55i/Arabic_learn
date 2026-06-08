@@ -38,6 +38,40 @@ void main() {
       expect(lesson.exercises[2].type, ExerciseType.build);
       expect(lesson.exercises[2].answerTokens, ['a', 'b']);
     });
+
+    test('parse les types intro_word et articulation', () {
+      final raw = json.decode('''
+      {
+        "module": {"id": "m2", "title_fr": "Makharij", "level": 1},
+        "lessons": [
+          {
+            "id": "l2", "title_fr": "Gorge", "xp": 15,
+            "exercises": [
+              {"type": "intro_word", "word": "مَرحَبًا", "prompt_fr": "Bonjour"},
+              {"type": "articulation", "letter": "ع", "prompt_fr": "milieu de la gorge",
+               "zone_fr": "Milieu de la gorge", "point_x": 0.67, "point_y": 0.62,
+               "audio": "audio/letters/ayn.mp3"}
+            ]
+          }
+        ]
+      }
+      ''') as Map<String, dynamic>;
+
+      final lesson = Module.fromContentFile(raw).lessons.first;
+
+      final intro = lesson.exercises[0];
+      expect(intro.type, ExerciseType.intro);
+      expect(intro.type.isInformational, isTrue);
+      expect(intro.word, 'مَرحَبًا');
+
+      final art = lesson.exercises[1];
+      expect(art.type, ExerciseType.articulation);
+      expect(art.type.isInformational, isTrue);
+      expect(art.letter, 'ع');
+      expect(art.pointX, closeTo(0.67, 1e-9));
+      expect(art.pointY, closeTo(0.62, 1e-9));
+      expect(art.zoneFr, 'Milieu de la gorge');
+    });
   });
 
   group('UserProgress', () {

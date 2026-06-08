@@ -61,6 +61,9 @@ simplement un message de repli.
       d'exercices (QCM, écoute, association, reconstruction), XP/streak/cœurs.
 - [x] **Phase 1** — Alphabet complet (28 lettres + hamza) en 8 leçons +
       pipeline audio (lecteur intégré + script de génération).
+- [x] **Contenu** — Module grammaire (7 leçons), module vocabulaire (4 leçons),
+      et tutoriels de prononciation (مخارج الحروف) avec schéma anatomique
+      interactif du point d'articulation. (21 leçons au total.)
 - [ ] **Phase 2** — Comptes, persistance locale, synchronisation, notifications.
 - [ ] **Phase 3** — Monétisation (abonnement + pubs).
 - [ ] **Phase 4** — Modules de grammaire/vocabulaire, polish, publication.

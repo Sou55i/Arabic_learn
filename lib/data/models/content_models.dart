@@ -88,7 +88,8 @@ class Lesson {
 
 /// Type d'exercice supporté par le moteur.
 enum ExerciseType {
-  intro, // présentation d'une notion / lettre (pas de réponse)
+  intro, // présentation d'une notion / lettre / mot (pas de réponse)
+  articulation, // tutoriel de prononciation avec schéma (pas de réponse)
   mcq, // choix multiple textuel
   listenChoose, // écoute un audio puis choisis
   translateChoose, // traduis en choisissant
@@ -100,7 +101,10 @@ enum ExerciseType {
     switch (raw) {
       case 'intro_letter':
       case 'intro_rule':
+      case 'intro_word':
         return ExerciseType.intro;
+      case 'articulation':
+        return ExerciseType.articulation;
       case 'mcq':
         return ExerciseType.mcq;
       case 'listen_choose':
@@ -115,6 +119,10 @@ enum ExerciseType {
         return ExerciseType.unknown;
     }
   }
+
+  /// Vrai si l'exercice n'attend pas de réponse (on passe avec « Continuer »).
+  bool get isInformational =>
+      this == ExerciseType.intro || this == ExerciseType.articulation;
 }
 
 /// Un exercice individuel.
@@ -126,9 +134,13 @@ class Exercise {
     this.answer,
     this.audio,
     this.letter,
+    this.word,
     this.pairs = const [],
     this.tokens = const [],
     this.answerTokens = const [],
+    this.pointX,
+    this.pointY,
+    this.zoneFr,
   });
 
   final ExerciseType type;
@@ -136,10 +148,22 @@ class Exercise {
   final List<String> options;
   final String? answer;
   final String? audio;
+
+  /// Lettre arabe à présenter (exercices intro_letter / articulation).
   final String? letter;
+
+  /// Mot/expression arabe à présenter (exercices intro_word, vocabulaire).
+  final String? word;
+
   final List<({String left, String right})> pairs;
   final List<String> tokens;
   final List<String> answerTokens;
+
+  /// Coordonnées normalisées (0..1) du point d'articulation sur le schéma,
+  /// et nom de la zone (exercices `articulation`).
+  final double? pointX;
+  final double? pointY;
+  final String? zoneFr;
 
   factory Exercise.fromJson(Map<String, dynamic> json) {
     final answerRaw = json['answer'];
@@ -151,6 +175,7 @@ class Exercise {
       answer: answerRaw is String ? answerRaw : null,
       audio: json['audio'] as String?,
       letter: json['letter'] as String?,
+      word: json['word'] as String?,
       pairs: (json['pairs'] as List<dynamic>? ?? const [])
           .cast<Map<String, dynamic>>()
           .map((p) => (left: p['left'] as String, right: p['right'] as String))
@@ -158,6 +183,9 @@ class Exercise {
       tokens: (json['tokens'] as List<dynamic>? ?? const []).cast<String>(),
       answerTokens:
           answerRaw is List ? answerRaw.cast<String>() : const <String>[],
+      pointX: (json['point_x'] as num?)?.toDouble(),
+      pointY: (json['point_y'] as num?)?.toDouble(),
+      zoneFr: json['zone_fr'] as String?,
     );
   }
 }

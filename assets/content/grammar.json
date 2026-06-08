@@ -1,0 +1,108 @@
+{
+  "module": {
+    "id": "mod_grammar",
+    "title_fr": "Grammaire de base",
+    "title_ar": "قَواعِد",
+    "level": 2,
+    "lessons": [
+      "les_gram_01",
+      "les_gram_02",
+      "les_gram_03",
+      "les_gram_04",
+      "les_gram_05",
+      "les_gram_06",
+      "les_gram_07"
+    ]
+  },
+  "lessons": [
+    {
+      "id": "les_gram_01",
+      "title_fr": "Les trois natures de mots",
+      "xp": 15,
+      "concept_fr": "En arabe, TOUT mot appartient à l'une de ces trois catégories : اِسم (ism = nom), فِعل (fiʿl = verbe), ou حَرف (ḥarf = particule/mot-outil).",
+      "exercises": [
+        { "type": "intro_rule", "prompt_fr": "اِسم (nom) : une personne, un objet, une idée — ex. بَيت (maison).\nفِعل (verbe) : une action + un temps — ex. كَتَبَ (il a écrit).\nحَرف (particule) : un mot-outil — ex. في (dans), وَ (et)." },
+        { "type": "mcq", "prompt_fr": "« بَيت » (maison) est…", "options": ["un nom (اسم)", "un verbe (فعل)", "une particule (حرف)"], "answer": "un nom (اسم)" },
+        { "type": "mcq", "prompt_fr": "« كَتَبَ » (il a écrit) est…", "options": ["un nom (اسم)", "un verbe (فعل)", "une particule (حرف)"], "answer": "un verbe (فعل)" },
+        { "type": "mcq", "prompt_fr": "« في » (dans) est…", "options": ["un nom (اسم)", "un verbe (فعل)", "une particule (حرف)"], "answer": "une particule (حرف)" },
+        { "type": "match", "prompt_fr": "Associe chaque mot à sa nature.", "pairs": [ { "left": "وَلَد", "right": "nom (اسم)" }, { "left": "شَرِبَ", "right": "verbe (فعل)" }, { "left": "مِن", "right": "particule (حرف)" } ] }
+      ]
+    },
+    {
+      "id": "les_gram_02",
+      "title_fr": "Le genre : masculin / féminin",
+      "xp": 15,
+      "concept_fr": "Le féminin est très souvent marqué par un ة (tā’ marbūṭa) à la fin du mot.",
+      "exercises": [
+        { "type": "intro_rule", "prompt_fr": "مُعَلِّم (muʿallim) = un enseignant (masculin).\nمُعَلِّمة (muʿallima) = une enseignante (féminin), avec le ة final." },
+        { "type": "mcq", "prompt_fr": "Quel mot est au féminin ?", "options": ["طالِب", "طالِبة", "وَلَد", "كِتاب"], "answer": "طالِبة" },
+        { "type": "mcq", "prompt_fr": "Quelle terminaison marque le plus souvent le féminin ?", "options": ["ة (tā’ marbūṭa)", "ن (nūn)", "و (wāw)", "ا (alif)"], "answer": "ة (tā’ marbūṭa)" },
+        { "type": "translate_choose", "prompt_fr": "« مَلِكة » signifie…", "options": ["une reine", "un roi", "un royaume", "régner"], "answer": "une reine" },
+        { "type": "match", "prompt_fr": "Associe chaque mot à son genre.", "pairs": [ { "left": "مُدَرِّس", "right": "masculin" }, { "left": "مُدَرِّسة", "right": "féminin" } ] }
+      ]
+    },
+    {
+      "id": "les_gram_03",
+      "title_fr": "Défini et indéfini",
+      "xp": 15,
+      "concept_fr": "Le préfixe الـ (al-) rend un nom DÉFINI (« le / la »). À l'inverse, la nunation (tanwin, ٌ ) à la fin rend le nom INDÉFINI (« un / une »).",
+      "exercises": [
+        { "type": "intro_rule", "prompt_fr": "كِتابٌ (kitābun) = un livre (indéfini, tanwin ٌ).\nالكِتابُ (al-kitābu) = le livre (défini, article الـ)." },
+        { "type": "translate_choose", "prompt_fr": "« البَيتُ » signifie…", "options": ["la maison", "une maison", "des maisons", "maison ?"], "answer": "la maison" },
+        { "type": "translate_choose", "prompt_fr": "« بابٌ » signifie…", "options": ["une porte", "la porte", "les portes", "ouvrir"], "answer": "une porte" },
+        { "type": "mcq", "prompt_fr": "Comment rend-on un nom DÉFINI (« le / la ») ?", "options": ["en ajoutant le préfixe الـ", "en ajoutant ة", "avec le tanwin ٌ", "en doublant la première lettre"], "answer": "en ajoutant le préfixe الـ" },
+        { "type": "match", "prompt_fr": "Associe chaque mot à sa traduction.", "pairs": [ { "left": "القَلَم", "right": "le stylo" }, { "left": "قَلَمٌ", "right": "un stylo" } ] }
+      ]
+    },
+    {
+      "id": "les_gram_04",
+      "title_fr": "La phrase nominale",
+      "xp": 15,
+      "concept_fr": "En arabe, on peut faire une phrase complète SANS verbe « être » au présent. On juxtapose le sujet (مُبتَدأ) et son attribut (خَبَر) : « البَيتُ كَبيرٌ » = « La maison (est) grande ».",
+      "exercises": [
+        { "type": "intro_rule", "prompt_fr": "Observe : البَيتُ كَبيرٌ (al-baytu kabīrun) = « La maison est grande ». Il n'y a AUCUN mot pour « est » !" },
+        { "type": "mcq", "prompt_fr": "Comment dit-on « est » dans « La maison est grande » ?", "options": ["On ne le dit pas (pas de verbe être au présent)", "Avec يَكون", "Avec هو", "Avec كان"], "answer": "On ne le dit pas (pas de verbe être au présent)" },
+        { "type": "mcq", "prompt_fr": "Dans « الوَلَدُ صَغيرٌ » (le garçon est petit), quel est le sujet (مُبتَدأ) ?", "options": ["الوَلَدُ", "صَغيرٌ", "les deux", "aucun"], "answer": "الوَلَدُ" },
+        { "type": "build", "prompt_fr": "Reconstruis : « L'étudiant est intelligent ».", "tokens": ["الطّالِبُ", "ذَكِيٌّ", "يَكونُ", "هُوَ"], "answer": ["الطّالِبُ", "ذَكِيٌّ"] },
+        { "type": "translate_choose", "prompt_fr": "Que signifie « الكِتابُ جَديدٌ » ?", "options": ["Le livre est nouveau", "Le nouveau livre", "Un livre nouveau", "Où est le livre ?"], "answer": "Le livre est nouveau" }
+      ]
+    },
+    {
+      "id": "les_gram_05",
+      "title_fr": "L'adjectif (النَّعت)",
+      "xp": 15,
+      "concept_fr": "En arabe, l'adjectif se place APRÈS le nom et s'accorde avec lui (genre, nombre, et défini/indéfini) : « البَيتُ الكَبيرُ » = « la grande maison ».",
+      "exercises": [
+        { "type": "intro_rule", "prompt_fr": "Attention à la différence :\n• البَيتُ كَبيرٌ = « La maison est grande » (phrase).\n• البَيتُ الكَبيرُ = « la grande maison » (les deux ont الـ)." },
+        { "type": "mcq", "prompt_fr": "Où se place l'adjectif par rapport au nom ?", "options": ["après le nom", "avant le nom", "n'importe où", "au début de la phrase"], "answer": "après le nom" },
+        { "type": "build", "prompt_fr": "Assemble : « la grande maison » (les deux mots définis).", "tokens": ["البَيتُ", "الكَبيرُ", "كَبيرٌ"], "answer": ["البَيتُ", "الكَبيرُ"] },
+        { "type": "mcq", "prompt_fr": "Pour « une voiture rouge », l'adjectif doit être…", "options": ["féminin et indéfini (accord avec « voiture »)", "masculin et défini", "au pluriel", "un verbe"], "answer": "féminin et indéfini (accord avec « voiture »)" }
+      ]
+    },
+    {
+      "id": "les_gram_06",
+      "title_fr": "Les pronoms personnels",
+      "xp": 15,
+      "concept_fr": "Les pronoms isolés de base. Remarque : l'arabe distingue le « tu » masculin (أنتَ) du « tu » féminin (أنتِ).",
+      "exercises": [
+        { "type": "intro_rule", "prompt_fr": "أنا = je / moi\nأنتَ = tu (à un homme)\nأنتِ = tu (à une femme)\nهو = il\nهي = elle\nنَحنُ = nous" },
+        { "type": "translate_choose", "prompt_fr": "« هي » signifie…", "options": ["elle", "il", "nous", "tu"], "answer": "elle" },
+        { "type": "mcq", "prompt_fr": "Comment dit-on « tu » à une femme ?", "options": ["أنتِ", "أنتَ", "هي", "أنا"], "answer": "أنتِ" },
+        { "type": "match", "prompt_fr": "Associe chaque pronom à sa traduction.", "pairs": [ { "left": "أنا", "right": "je" }, { "left": "هو", "right": "il" }, { "left": "نَحنُ", "right": "nous" }, { "left": "هي", "right": "elle" } ] }
+      ]
+    },
+    {
+      "id": "les_gram_07",
+      "title_fr": "La phrase verbale & le passé",
+      "xp": 20,
+      "concept_fr": "Une phrase verbale (جُملة فِعلية) commence souvent par le verbe. Au passé, la plupart des verbes suivent le schéma de كَتَبَ (il a écrit).",
+      "exercises": [
+        { "type": "intro_rule", "prompt_fr": "كَتَبَ (kataba) = il a écrit.\nكَتَبَتْ (katabat) = elle a écrit (on ajoute ـت).\nكَتَبتُ (katabtu) = j'ai écrit." },
+        { "type": "translate_choose", "prompt_fr": "« شَرِبَ الوَلَدُ » signifie…", "options": ["Le garçon a bu", "Le garçon boit", "Bois, garçon !", "Le garçon est une boisson"], "answer": "Le garçon a bu" },
+        { "type": "mcq", "prompt_fr": "Pour dire « ELLE a écrit », on ajoute…", "options": ["ـت (tā’) à la fin", "الـ au début", "ة au milieu", "rien"], "answer": "ـت (tā’) à la fin" },
+        { "type": "build", "prompt_fr": "Assemble : « Le garçon a mangé la pomme » (verbe + sujet + objet).", "tokens": ["أَكَلَ", "الوَلَدُ", "التُّفّاحةَ", "يَأكُلُ"], "answer": ["أَكَلَ", "الوَلَدُ", "التُّفّاحةَ"] },
+        { "type": "mcq", "prompt_fr": "Dans « جُملة فِعلية » (phrase verbale), par quoi commence-t-on souvent ?", "options": ["le verbe", "le sujet", "un adjectif", "une préposition"], "answer": "le verbe" }
+      ]
+    }
+  ]
+}
