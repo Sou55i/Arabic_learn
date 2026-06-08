@@ -1,0 +1,42 @@
+{
+  "module": {
+    "id": "mod_makharij",
+    "title_fr": "Points de prononciation",
+    "title_ar": "مَخارِج الحُروف",
+    "level": 1,
+    "lessons": ["les_makharij_01", "les_makharij_02"]
+  },
+  "lessons": [
+    {
+      "id": "les_makharij_01",
+      "title_fr": "Les lettres de la gorge",
+      "xp": 15,
+      "concept_fr": "Six lettres s'articulent dans la gorge (الحَلق), à trois profondeurs. Ce sont les sons les plus difficiles pour un francophone : ce module te montre exactement où les produire.",
+      "exercises": [
+        { "type": "articulation", "letter": "ء", "audio": "audio/letters/hamza.mp3", "zone_fr": "Fond de la gorge", "point_x": 0.68, "point_y": 0.82, "prompt_fr": "هَمزة (hamza) — tout au fond de la gorge, au niveau des cordes vocales. C'est un coup de glotte : on bloque net le souffle, comme l'arrêt entre « oh-oh »." },
+        { "type": "articulation", "letter": "ه", "audio": "audio/letters/ha.mp3", "zone_fr": "Fond de la gorge", "point_x": 0.68, "point_y": 0.80, "prompt_fr": "هاء (hā’) — au même endroit, tout au fond de la gorge, mais en laissant passer le souffle : un « h » soufflé et doux." },
+        { "type": "articulation", "letter": "ع", "audio": "audio/letters/ayn.mp3", "zone_fr": "Milieu de la gorge", "point_x": 0.67, "point_y": 0.62, "prompt_fr": "عين (ʿayn) — au milieu de la gorge : on resserre la gorge sans la fermer, avec la voix (cordes vocales qui vibrent). Sans équivalent en français." },
+        { "type": "articulation", "letter": "ح", "audio": "audio/letters/hha.mp3", "zone_fr": "Milieu de la gorge", "point_x": 0.67, "point_y": 0.60, "prompt_fr": "حاء (ḥā’) — au même endroit que ع (milieu de la gorge), mais soufflé, sans voix : un « h » très chaud et expiré, comme après un effort." },
+        { "type": "articulation", "letter": "غ", "audio": "audio/letters/ghayn.mp3", "zone_fr": "Entrée de la gorge", "point_x": 0.61, "point_y": 0.50, "prompt_fr": "غين (ghayn) — à l'entrée de la gorge (le plus haut) : très proche du « r » grasseyé français, avec une vibration." },
+        { "type": "articulation", "letter": "خ", "audio": "audio/letters/kha.mp3", "zone_fr": "Entrée de la gorge", "point_x": 0.61, "point_y": 0.48, "prompt_fr": "خاء (khā’) — au même endroit que غ, mais soufflé sans voix : la « jota » espagnole / le « ch » allemand de « Bach »." },
+        { "type": "mcq", "prompt_fr": "Quelle lettre se prononce tout au FOND de la gorge ?", "options": ["خ", "ع", "ء", "ك"], "answer": "ء" },
+        { "type": "mcq", "prompt_fr": "ع et ح s'articulent au même endroit. Quelle est la différence ?", "options": ["ع est sonore (avec voix), ح est soufflé (sans voix)", "ع est soufflé, ح est sonore", "ع se fait avec les lèvres", "Aucune différence"], "answer": "ع est sonore (avec voix), ح est soufflé (sans voix)" },
+        { "type": "match", "prompt_fr": "Associe chaque lettre à sa zone d'articulation.", "pairs": [ { "left": "ء", "right": "fond de la gorge" }, { "left": "ع", "right": "milieu de la gorge" }, { "left": "خ", "right": "entrée de la gorge" } ] }
+      ]
+    },
+    {
+      "id": "les_makharij_02",
+      "title_fr": "Les lèvres et la langue",
+      "xp": 10,
+      "concept_fr": "Toutes les lettres ne se font pas dans la gorge. Voici quelques points d'articulation plus en avant, dans la bouche.",
+      "exercises": [
+        { "type": "articulation", "letter": "ب", "audio": "audio/letters/ba.mp3", "zone_fr": "Lèvres", "point_x": 0.10, "point_y": 0.46, "prompt_fr": "باء (bā’) — avec les deux lèvres : on les ferme puis on relâche l'air (son « b »)." },
+        { "type": "articulation", "letter": "م", "audio": "audio/letters/mim.mp3", "zone_fr": "Lèvres", "point_x": 0.10, "point_y": 0.47, "prompt_fr": "ميم (mīm) — les deux lèvres fermées, mais l'air passe par le nez (son « m » nasal)." },
+        { "type": "articulation", "letter": "ف", "audio": "audio/letters/fa.mp3", "zone_fr": "Lèvre + dents", "point_x": 0.12, "point_y": 0.43, "prompt_fr": "فاء (fā’) — la lèvre inférieure touche le bord des dents du haut (son « f »)." },
+        { "type": "articulation", "letter": "ل", "audio": "audio/letters/lam.mp3", "zone_fr": "Bout de la langue", "point_x": 0.34, "point_y": 0.49, "prompt_fr": "لام (lām) — le bout de la langue touche le palais juste derrière les dents du haut (son « l »)." },
+        { "type": "mcq", "prompt_fr": "Quelle lettre se prononce avec LES DEUX LÈVRES et l'air par le nez ?", "options": ["ف", "ل", "م", "ب"], "answer": "م" },
+        { "type": "match", "prompt_fr": "Associe chaque lettre à son point d'articulation.", "pairs": [ { "left": "ب", "right": "les lèvres" }, { "left": "ف", "right": "lèvre + dents" }, { "left": "ل", "right": "bout de la langue" } ] }
+      ]
+    }
+  ]
+}

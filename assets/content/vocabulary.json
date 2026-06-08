@@ -1,0 +1,69 @@
+{
+  "module": {
+    "id": "mod_vocab",
+    "title_fr": "Vocabulaire",
+    "title_ar": "المُفرَدات",
+    "level": 1,
+    "lessons": ["les_voc_01", "les_voc_02", "les_voc_03", "les_voc_04"]
+  },
+  "lessons": [
+    {
+      "id": "les_voc_01",
+      "title_fr": "Salutations & politesse",
+      "xp": 10,
+      "exercises": [
+        { "type": "intro_word", "word": "مَرحَبًا", "prompt_fr": "مَرحَبًا (marḥaban) — « Bonjour / Salut »." },
+        { "type": "intro_word", "word": "شُكرًا", "prompt_fr": "شُكرًا (shukran) — « Merci »." },
+        { "type": "intro_word", "word": "نَعَم", "prompt_fr": "نَعَم (naʿam) — « Oui »." },
+        { "type": "intro_word", "word": "لا", "prompt_fr": "لا (lā) — « Non »." },
+        { "type": "translate_choose", "prompt_fr": "Que signifie « شُكرًا » ?", "options": ["Merci", "Bonjour", "Oui", "Au revoir"], "answer": "Merci" },
+        { "type": "translate_choose", "prompt_fr": "Comment dit-on « Oui » ?", "options": ["نَعَم", "لا", "شُكرًا", "مَرحَبًا"], "answer": "نَعَم" },
+        { "type": "match", "prompt_fr": "Associe chaque mot à sa traduction.", "pairs": [ { "left": "مَرحَبًا", "right": "Bonjour" }, { "left": "شُكرًا", "right": "Merci" }, { "left": "نَعَم", "right": "Oui" }, { "left": "لا", "right": "Non" } ] }
+      ]
+    },
+    {
+      "id": "les_voc_02",
+      "title_fr": "La famille",
+      "xp": 10,
+      "exercises": [
+        { "type": "intro_word", "word": "أَب", "prompt_fr": "أَب (ab) — « père »." },
+        { "type": "intro_word", "word": "أُمّ", "prompt_fr": "أُمّ (umm) — « mère »." },
+        { "type": "intro_word", "word": "أَخ", "prompt_fr": "أَخ (akh) — « frère »." },
+        { "type": "intro_word", "word": "أُخت", "prompt_fr": "أُخت (ukht) — « sœur »." },
+        { "type": "translate_choose", "prompt_fr": "Que signifie « أُمّ » ?", "options": ["mère", "père", "frère", "sœur"], "answer": "mère" },
+        { "type": "translate_choose", "prompt_fr": "Comment dit-on « frère » ?", "options": ["أَخ", "أُخت", "أَب", "أُمّ"], "answer": "أَخ" },
+        { "type": "match", "prompt_fr": "Associe chaque mot à sa traduction.", "pairs": [ { "left": "أَب", "right": "père" }, { "left": "أُمّ", "right": "mère" }, { "left": "أَخ", "right": "frère" }, { "left": "أُخت", "right": "sœur" } ] }
+      ]
+    },
+    {
+      "id": "les_voc_03",
+      "title_fr": "Les nombres 1 à 5",
+      "xp": 10,
+      "exercises": [
+        { "type": "intro_word", "word": "واحِد", "prompt_fr": "واحِد (wāḥid) — « un » (1)." },
+        { "type": "intro_word", "word": "اِثنان", "prompt_fr": "اِثنان (ithnān) — « deux » (2)." },
+        { "type": "intro_word", "word": "ثَلاثة", "prompt_fr": "ثَلاثة (thalātha) — « trois » (3)." },
+        { "type": "intro_word", "word": "أَربَعة", "prompt_fr": "أَربَعة (arbaʿa) — « quatre » (4)." },
+        { "type": "intro_word", "word": "خَمسة", "prompt_fr": "خَمسة (khamsa) — « cinq » (5)." },
+        { "type": "translate_choose", "prompt_fr": "Que signifie « ثَلاثة » ?", "options": ["trois", "deux", "quatre", "cinq"], "answer": "trois" },
+        { "type": "translate_choose", "prompt_fr": "Comment dit-on « cinq » ?", "options": ["خَمسة", "أَربَعة", "واحِد", "اِثنان"], "answer": "خَمسة" },
+        { "type": "match", "prompt_fr": "Associe chaque nombre à sa valeur.", "pairs": [ { "left": "واحِد", "right": "1" }, { "left": "اِثنان", "right": "2" }, { "left": "ثَلاثة", "right": "3" }, { "left": "خَمسة", "right": "5" } ] }
+      ]
+    },
+    {
+      "id": "les_voc_04",
+      "title_fr": "Les couleurs",
+      "xp": 10,
+      "exercises": [
+        { "type": "intro_word", "word": "أَحمَر", "prompt_fr": "أَحمَر (aḥmar) — « rouge »." },
+        { "type": "intro_word", "word": "أَزرَق", "prompt_fr": "أَزرَق (azraq) — « bleu »." },
+        { "type": "intro_word", "word": "أَخضَر", "prompt_fr": "أَخضَر (akhḍar) — « vert »." },
+        { "type": "intro_word", "word": "أَصفَر", "prompt_fr": "أَصفَر (aṣfar) — « jaune »." },
+        { "type": "intro_word", "word": "أَبيَض", "prompt_fr": "أَبيَض (abyaḍ) — « blanc »." },
+        { "type": "translate_choose", "prompt_fr": "Que signifie « أَخضَر » ?", "options": ["vert", "rouge", "bleu", "jaune"], "answer": "vert" },
+        { "type": "translate_choose", "prompt_fr": "Comment dit-on « rouge » ?", "options": ["أَحمَر", "أَزرَق", "أَصفَر", "أَبيَض"], "answer": "أَحمَر" },
+        { "type": "match", "prompt_fr": "Associe chaque couleur à sa traduction.", "pairs": [ { "left": "أَحمَر", "right": "rouge" }, { "left": "أَزرَق", "right": "bleu" }, { "left": "أَخضَر", "right": "vert" }, { "left": "أَصفَر", "right": "jaune" } ] }
+      ]
+    }
+  ]
+}
