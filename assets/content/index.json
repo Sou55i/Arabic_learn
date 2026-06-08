@@ -6,7 +6,7 @@
     "language_code": "ar"
   },
   "content_files": [
-    "assets/content/sample_alphabet.json",
+    "assets/content/alphabet.json",
     "assets/content/sample_grammar.json"
   ]
 }
