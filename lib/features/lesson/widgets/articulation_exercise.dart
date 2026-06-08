@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../app/providers.dart';
 import '../../../app/theme.dart';
 import '../../../data/models/content_models.dart';
+import '../../../shared/widgets/speaker_button.dart';
 import 'articulation_diagram.dart';
 
 /// Tutoriel de prononciation : montre le schéma de l'appareil phonatoire avec
@@ -31,7 +31,7 @@ class ArticulationExercise extends ConsumerWidget {
                 ),
               if (exercise.audio != null) ...[
                 const SizedBox(width: 16),
-                _SpeakerButton(audio: exercise.audio!),
+                SpeakerButton(audio: exercise.audio!),
               ],
             ],
           ),
@@ -49,31 +49,6 @@ class ArticulationExercise extends ConsumerWidget {
           ),
         ],
       ),
-    );
-  }
-}
-
-class _SpeakerButton extends ConsumerWidget {
-  const _SpeakerButton({required this.audio});
-
-  final String audio;
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    return IconButton.filled(
-      iconSize: 30,
-      onPressed: () async {
-        final played = await ref.read(audioPlayerProvider).play(audio);
-        if (!played && context.mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content:
-                  Text('🔊 Audio non disponible (lance tools/generate_audio.py).'),
-            ),
-          );
-        }
-      },
-      icon: const Icon(Icons.volume_up_rounded),
     );
   }
 }

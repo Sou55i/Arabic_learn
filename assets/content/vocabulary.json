@@ -12,12 +12,12 @@
       "title_fr": "Salutations & politesse",
       "xp": 10,
       "exercises": [
-        { "type": "intro_word", "word": "مَرحَبًا", "prompt_fr": "مَرحَبًا (marḥaban) — « Bonjour / Salut »." },
-        { "type": "intro_word", "word": "شُكرًا", "prompt_fr": "شُكرًا (shukran) — « Merci »." },
-        { "type": "intro_word", "word": "نَعَم", "prompt_fr": "نَعَم (naʿam) — « Oui »." },
-        { "type": "intro_word", "word": "لا", "prompt_fr": "لا (lā) — « Non »." },
+        { "type": "intro_word", "word": "مَرحَبًا", "audio": "audio/words/marhaban.mp3", "prompt_fr": "مَرحَبًا (marḥaban) — « Bonjour / Salut »." },
+        { "type": "intro_word", "word": "شُكرًا", "audio": "audio/words/shukran.mp3", "prompt_fr": "شُكرًا (shukran) — « Merci »." },
+        { "type": "intro_word", "word": "نَعَم", "audio": "audio/words/naam.mp3", "prompt_fr": "نَعَم (naʿam) — « Oui »." },
+        { "type": "intro_word", "word": "لا", "audio": "audio/words/la.mp3", "prompt_fr": "لا (lā) — « Non »." },
         { "type": "translate_choose", "prompt_fr": "Que signifie « شُكرًا » ?", "options": ["Merci", "Bonjour", "Oui", "Au revoir"], "answer": "Merci" },
-        { "type": "translate_choose", "prompt_fr": "Comment dit-on « Oui » ?", "options": ["نَعَم", "لا", "شُكرًا", "مَرحَبًا"], "answer": "نَعَم" },
+        { "type": "listen_choose", "prompt_fr": "Écoute et choisis le bon mot.", "audio": "audio/words/marhaban.mp3", "options": ["مَرحَبًا", "شُكرًا", "نَعَم", "لا"], "answer": "مَرحَبًا" },
         { "type": "match", "prompt_fr": "Associe chaque mot à sa traduction.", "pairs": [ { "left": "مَرحَبًا", "right": "Bonjour" }, { "left": "شُكرًا", "right": "Merci" }, { "left": "نَعَم", "right": "Oui" }, { "left": "لا", "right": "Non" } ] }
       ]
     },
@@ -26,12 +26,12 @@
       "title_fr": "La famille",
       "xp": 10,
       "exercises": [
-        { "type": "intro_word", "word": "أَب", "prompt_fr": "أَب (ab) — « père »." },
-        { "type": "intro_word", "word": "أُمّ", "prompt_fr": "أُمّ (umm) — « mère »." },
-        { "type": "intro_word", "word": "أَخ", "prompt_fr": "أَخ (akh) — « frère »." },
-        { "type": "intro_word", "word": "أُخت", "prompt_fr": "أُخت (ukht) — « sœur »." },
+        { "type": "intro_word", "word": "أَب", "audio": "audio/words/ab.mp3", "prompt_fr": "أَب (ab) — « père »." },
+        { "type": "intro_word", "word": "أُمّ", "audio": "audio/words/umm.mp3", "prompt_fr": "أُمّ (umm) — « mère »." },
+        { "type": "intro_word", "word": "أَخ", "audio": "audio/words/akh.mp3", "prompt_fr": "أَخ (akh) — « frère »." },
+        { "type": "intro_word", "word": "أُخت", "audio": "audio/words/ukht.mp3", "prompt_fr": "أُخت (ukht) — « sœur »." },
         { "type": "translate_choose", "prompt_fr": "Que signifie « أُمّ » ?", "options": ["mère", "père", "frère", "sœur"], "answer": "mère" },
-        { "type": "translate_choose", "prompt_fr": "Comment dit-on « frère » ?", "options": ["أَخ", "أُخت", "أَب", "أُمّ"], "answer": "أَخ" },
+        { "type": "listen_choose", "prompt_fr": "Écoute et choisis le bon mot.", "audio": "audio/words/akh.mp3", "options": ["أَب", "أُمّ", "أَخ", "أُخت"], "answer": "أَخ" },
         { "type": "match", "prompt_fr": "Associe chaque mot à sa traduction.", "pairs": [ { "left": "أَب", "right": "père" }, { "left": "أُمّ", "right": "mère" }, { "left": "أَخ", "right": "frère" }, { "left": "أُخت", "right": "sœur" } ] }
       ]
     },
@@ -40,13 +40,13 @@
       "title_fr": "Les nombres 1 à 5",
       "xp": 10,
       "exercises": [
-        { "type": "intro_word", "word": "واحِد", "prompt_fr": "واحِد (wāḥid) — « un » (1)." },
-        { "type": "intro_word", "word": "اِثنان", "prompt_fr": "اِثنان (ithnān) — « deux » (2)." },
-        { "type": "intro_word", "word": "ثَلاثة", "prompt_fr": "ثَلاثة (thalātha) — « trois » (3)." },
-        { "type": "intro_word", "word": "أَربَعة", "prompt_fr": "أَربَعة (arbaʿa) — « quatre » (4)." },
-        { "type": "intro_word", "word": "خَمسة", "prompt_fr": "خَمسة (khamsa) — « cinq » (5)." },
+        { "type": "intro_word", "word": "واحِد", "audio": "audio/words/wahid.mp3", "prompt_fr": "واحِد (wāḥid) — « un » (1)." },
+        { "type": "intro_word", "word": "اِثنان", "audio": "audio/words/ithnan.mp3", "prompt_fr": "اِثنان (ithnān) — « deux » (2)." },
+        { "type": "intro_word", "word": "ثَلاثة", "audio": "audio/words/thalatha.mp3", "prompt_fr": "ثَلاثة (thalātha) — « trois » (3)." },
+        { "type": "intro_word", "word": "أَربَعة", "audio": "audio/words/arbaa.mp3", "prompt_fr": "أَربَعة (arbaʿa) — « quatre » (4)." },
+        { "type": "intro_word", "word": "خَمسة", "audio": "audio/words/khamsa.mp3", "prompt_fr": "خَمسة (khamsa) — « cinq » (5)." },
         { "type": "translate_choose", "prompt_fr": "Que signifie « ثَلاثة » ?", "options": ["trois", "deux", "quatre", "cinq"], "answer": "trois" },
-        { "type": "translate_choose", "prompt_fr": "Comment dit-on « cinq » ?", "options": ["خَمسة", "أَربَعة", "واحِد", "اِثنان"], "answer": "خَمسة" },
+        { "type": "listen_choose", "prompt_fr": "Écoute et choisis le bon nombre.", "audio": "audio/words/khamsa.mp3", "options": ["واحِد", "ثَلاثة", "أَربَعة", "خَمسة"], "answer": "خَمسة" },
         { "type": "match", "prompt_fr": "Associe chaque nombre à sa valeur.", "pairs": [ { "left": "واحِد", "right": "1" }, { "left": "اِثنان", "right": "2" }, { "left": "ثَلاثة", "right": "3" }, { "left": "خَمسة", "right": "5" } ] }
       ]
     },
@@ -55,13 +55,13 @@
       "title_fr": "Les couleurs",
       "xp": 10,
       "exercises": [
-        { "type": "intro_word", "word": "أَحمَر", "prompt_fr": "أَحمَر (aḥmar) — « rouge »." },
-        { "type": "intro_word", "word": "أَزرَق", "prompt_fr": "أَزرَق (azraq) — « bleu »." },
-        { "type": "intro_word", "word": "أَخضَر", "prompt_fr": "أَخضَر (akhḍar) — « vert »." },
-        { "type": "intro_word", "word": "أَصفَر", "prompt_fr": "أَصفَر (aṣfar) — « jaune »." },
-        { "type": "intro_word", "word": "أَبيَض", "prompt_fr": "أَبيَض (abyaḍ) — « blanc »." },
+        { "type": "intro_word", "word": "أَحمَر", "audio": "audio/words/ahmar.mp3", "prompt_fr": "أَحمَر (aḥmar) — « rouge »." },
+        { "type": "intro_word", "word": "أَزرَق", "audio": "audio/words/azraq.mp3", "prompt_fr": "أَزرَق (azraq) — « bleu »." },
+        { "type": "intro_word", "word": "أَخضَر", "audio": "audio/words/akhdar.mp3", "prompt_fr": "أَخضَر (akhḍar) — « vert »." },
+        { "type": "intro_word", "word": "أَصفَر", "audio": "audio/words/asfar.mp3", "prompt_fr": "أَصفَر (aṣfar) — « jaune »." },
+        { "type": "intro_word", "word": "أَبيَض", "audio": "audio/words/abyad.mp3", "prompt_fr": "أَبيَض (abyaḍ) — « blanc »." },
         { "type": "translate_choose", "prompt_fr": "Que signifie « أَخضَر » ?", "options": ["vert", "rouge", "bleu", "jaune"], "answer": "vert" },
-        { "type": "translate_choose", "prompt_fr": "Comment dit-on « rouge » ?", "options": ["أَحمَر", "أَزرَق", "أَصفَر", "أَبيَض"], "answer": "أَحمَر" },
+        { "type": "listen_choose", "prompt_fr": "Écoute et choisis la bonne couleur.", "audio": "audio/words/ahmar.mp3", "options": ["أَحمَر", "أَزرَق", "أَخضَر", "أَصفَر"], "answer": "أَحمَر" },
         { "type": "match", "prompt_fr": "Associe chaque couleur à sa traduction.", "pairs": [ { "left": "أَحمَر", "right": "rouge" }, { "left": "أَزرَق", "right": "bleu" }, { "left": "أَخضَر", "right": "vert" }, { "left": "أَصفَر", "right": "jaune" } ] }
       ]
     }

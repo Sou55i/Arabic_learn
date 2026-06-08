@@ -43,11 +43,13 @@ flutter test
 ### Générer l'audio des lettres
 
 Les fichiers son ne sont pas versionnés : on les génère avec une voix arabe
-native via [`edge-tts`](https://github.com/rany2/edge-tts) (gratuit).
+native via [`edge-tts`](https://github.com/rany2/edge-tts) (gratuit). Le script
+parcourt tous les manifestes (`assets/audio/*/manifest.json` : lettres ET mots).
 
 ```bash
 pip install -r tools/requirements.txt
-python tools/generate_audio.py            # crée assets/audio/letters/*.mp3
+python tools/generate_audio.py            # génère lettres + mots
+python tools/generate_audio.py --only words    # un seul dossier
 python tools/generate_audio.py --list-voices   # autres voix arabes
 ```
 
@@ -64,6 +66,8 @@ simplement un message de repli.
 - [x] **Contenu** — Module grammaire (7 leçons), module vocabulaire (4 leçons),
       et tutoriels de prononciation (مخارج الحروف) avec schéma anatomique
       interactif du point d'articulation. (21 leçons au total.)
+- [x] **Audio** — Son natif des 28 lettres + des mots de vocabulaire ;
+      bouton « écouter » sur les écrans de lettre, de mot et de prononciation.
 - [ ] **Phase 2** — Comptes, persistance locale, synchronisation, notifications.
 - [ ] **Phase 3** — Monétisation (abonnement + pubs).
 - [ ] **Phase 4** — Modules de grammaire/vocabulaire, polish, publication.

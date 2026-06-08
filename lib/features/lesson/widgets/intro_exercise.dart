@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../../../app/theme.dart';
 import '../../../data/models/content_models.dart';
+import '../../../shared/widgets/speaker_button.dart';
 
 /// Exercice de présentation : on montre une notion, une lettre ou un mot,
-/// sans rien à répondre.
+/// sans rien à répondre. Si un audio est fourni, un bouton « écouter »
+/// apparaît sous le terme.
 class IntroExercise extends StatelessWidget {
   const IntroExercise({super.key, required this.exercise});
 
@@ -26,6 +28,10 @@ class IntroExercise extends StatelessWidget {
               textDirection: TextDirection.rtl,
               style: AppTheme.arabic(size: size, color: AppTheme.primary),
             ),
+            if (exercise.audio != null) ...[
+              const SizedBox(height: 12),
+              SpeakerButton(audio: exercise.audio!),
+            ],
             const SizedBox(height: 24),
           ] else
             const Icon(Icons.menu_book_rounded,

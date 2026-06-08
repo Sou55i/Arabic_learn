@@ -1,0 +1,24 @@
+{
+  "_comment": "Mappe chaque fichier audio (slug) au mot arabe à prononcer. Utilisé par tools/generate_audio.py.",
+  "voice": "ar-SA-HamedNeural",
+  "entries": {
+    "marhaban": "مَرحَبًا",
+    "shukran": "شُكرًا",
+    "naam": "نَعَم",
+    "la": "لا",
+    "ab": "أَب",
+    "umm": "أُمّ",
+    "akh": "أَخ",
+    "ukht": "أُخت",
+    "wahid": "واحِد",
+    "ithnan": "اِثنان",
+    "thalatha": "ثَلاثة",
+    "arbaa": "أَربَعة",
+    "khamsa": "خَمسة",
+    "ahmar": "أَحمَر",
+    "azraq": "أَزرَق",
+    "akhdar": "أَخضَر",
+    "asfar": "أَصفَر",
+    "abyad": "أَبيَض"
+  }
+}
